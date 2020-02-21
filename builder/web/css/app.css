@@ -44,6 +44,25 @@ h1, h2, h3, h4 {
   background-color: #fff;
   padding: 40px;
 }
+.handm-button a{
+    font-family: 'futura-pt', sans-serif;
+    margin-top: 15px;
+    width: 100%;
+    padding: 25px;
+    color: #000;
+    border-radius: 0;
+    border: 0px solid #4577bd;
+    background: linear-gradient(89.81deg, rgb(101, 48, 207) 0.64%, rgb(16, 50, 242) 23.92%, rgb(131, 228, 96) 43.07%, rgb(239, 231, 85) 61.69%, rgb(223, 124, 54) 80.84%, rgb(210, 66, 55) 99.98%);
+    cursor: pointer;
+    font-family: futura-pt;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    display: block;
+    text-decoration: none;
+}
 .logo {
   background-position: left center;
   background-repeat: no-repeat;
@@ -130,6 +149,7 @@ h1.header1 {
   background-image: url("https://storage.googleapis.com/awal-bucket/lauv-pattern-white-3.jpg");
   background-repeat: repeat;
   padding: 0 0 50px 0;
+  min-height: 250px;
 }
 h3.header2 {
   font-size: 29px;

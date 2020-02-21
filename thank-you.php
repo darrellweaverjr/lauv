@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 }
 
-$template_name = 'thank-you';
+$template_name = 'hm-thank-you';
 require dirname(__FILE__).'/_creds.php';
 require dirname(__FILE__).'/_dynamix.php';
 ?>
@@ -18,18 +18,7 @@ require dirname(__FILE__).'/_dynamix.php';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title data-xid="title"><?= $profile->xid("title") ?></title>
 
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="628">
-	<meta property="og:title" content="Lauv">
-	<meta property="og:description" content="Join the Lauv Fan List for Tour News, Music Drops, and Special Announcements!">
-	<meta property="og:url" content="https://awal.com">
-	<!-- <meta property="og:image" content="https://storage.googleapis.com/dlvec-bucket/pride-og-image.jpg"> -->
-	<meta property="og:type" content="video">
-	<meta property="og:video:url" content="https://www.youtube.com/embed/_cmORZMgv6I">
-	<meta property="og:video:secure_url" content="https://www.youtube.com/embed/_cmORZMgv6I">
-	<meta property="og:video:type" content="application/x-shockwave-flash">
-	<meta property="og:video:width" content="1280">
-	<meta property="og:video:height" content="720">
+	<?= $profile->xid("head") ?>
 
 	<link rel="shortcut icon" type="image/x-icon" href="https://storage.googleapis.com/awal-bucket/favicon.ico">
 	<link rel="stylesheet" id="bs-css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
@@ -43,90 +32,93 @@ require dirname(__FILE__).'/_dynamix.php';
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-KPK39GQ');</script>
+	})(window,document,'script','dataLayer','<?= $profile->xid("gtm") ?>');</script>
 	<!-- End Google Tag Manager -->
 </head>
 
 <body>
 
 	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPK39GQ"
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?= $profile->xid("gtm") ?>"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+	<!-- End Google Tag Manager (noscript) -->>
 
-    <section class="contesttop">
-			<div class="hero-header">
-        <div class="row extremepadding">
-          <div class="small-12 medium-12 large-8 col-md-offset-2 columns" data-xid="logo"><!-- Modify the URL to the logo file -->
-            <?= $profile->xid("logo") ?>
-          </div>
-        </div>
-      </div>
+	<section class="contesttop">
+		<div class="hero-header">
+			<div class="row extremepadding">
+				<div class="small-12 medium-12 large-8 col-md-offset-2 columns" data-xid="logo"><!-- Modify the URL to the logo file -->
+					<?= $profile->xid("logo") ?>
+				</div>
+			</div>
+		</div>
 
-      <div class="row">
-        <div class="small-12 medium-12 large-8 col-md-offset-2 columns formcontent">
-          <div class="fam-form">
+		<div class="body-pattern">
+			<div class="row">
+				<div class="small-12 medium-12 large-8 col-md-offset-2 columns formcontent">
+					<div class="rainbow-bg">
+						<div class="fam-form">
 
-            <div class="formContent">
-              <h3 class="header2" data-xid="header2">
-								<?= $profile->xid("header2") ?>
-              </h3>
-            </div>
-						<div class="formblock">
+	            <div class="formContent">
+	              <h3 class="header2" data-xid="header2">
+									<?= $profile->xid("header2") ?>
+	              </h3>
+	            </div>
+							<div class="formblock">
 
-              <div class="service-container">
+	              <div class="service-container">
 
-                 <div class="service">
-                     <a data-xid="apple-music-link" class="img-btn redirect" href="https://music.apple.com/us/artist/982612996?uo=4&amp;app=music&amp;at=1010lpyZ&amp;ct=LFV_83d8003f186e77e39c08fbdf7fa86a6b" data-player="applemusic" data-servicetype="play" data-apptype="manual">
-											 <?= $profile->xid("apple-music-link") ?>
-                     </a>
-                 </div>
-                 <div class="service">
-                     <a data-xid="spotify-music-link" class="img-btn redirect" href="https://open.spotify.com/artist/5JZ7CnR6gTvEMKX4g70Amv" data-uri="spotify:artist:5JZ7CnR6gTvEMKX4g70Amv" data-player="spotify" data-servicetype="play" data-apptype="manual">
-											 <?= $profile->xid("spotify-music-link") ?>
-                     </a>
-                 </div>
-                 <div class="service">
-                     <a data-xid="itunes-music-link" class="img-btn redirect" href="https://itunes.apple.com/us/artist/1354803196?uo=4&amp;app=itunes&amp;at=1010lpyZ&amp;ct=LFV_83d8003f186e77e39c08fbdf7fa86a6b" data-player="itunes" data-servicetype="download" data-apptype="manual">
-											 <?= $profile->xid("itunes-music-link") ?>
-                     </a>
-                 </div>
-                 <div class="service">
-                     <a data-xid="amazon-music-link" class="img-btn redirect" href="https://music.amazon.com/artists/B00CN49HZU?ref=dm_sh_865c-2082-dmcp-c1b3-dcda7&amp;musicTerritory=US&amp;marketplaceId=ATVPDKIKX0DER" data-player="amazonmusic" data-servicetype="play" data-apptype="manual">
-											 <?= $profile->xid("amazon-music-link") ?>
-                     </a>
-                 </div>
-                 <div class="service">
-                     <a data-xid="youtube-music-link" class="img-btn redirect" href="https://music.youtube.com/channel/UCWjoDY2SXJ5dvcdunWI6mjQ" data-player="youtubemusic" data-servicetype="play" data-apptype="manual">
-											 <?= $profile->xid("youtube-music-link") ?>
-                     </a>
-                 </div>
-                 <div class="service">
-                     <a data-xid="tidal-music-link" class="img-btn redirect" href="https://tidal.com/browse/artist/4898953" data-player="tidal" data-servicetype="play" data-apptype="manual">
-											 <?= $profile->xid("tidal-music-link") ?>
-                     </a>
-                 </div>
-                 <div class="service">
-                     <a data-xid="pandora-music-link" class="img-btn redirect" href="https://www.pandora.com/artist/lauv/AR2J3gdxqXvfbww?part=lf&amp;corr=83d8003f186e77e39c08fbdf7fa86a6b" data-player="pandora" data-servicetype="play" data-apptype="manual">
-											 <?= $profile->xid("pandora-music-link") ?>
-                     </a>
-                 </div>
-                 <div class="service">
-                     <a data-xid="deezer-music-link" class="img-btn redirect" href="http://www.deezer.com/artist/4677655?app_id=140685" data-player="deezer" data-servicetype="play" data-apptype="manual">
-											 <?= $profile->xid("deezer-music-link") ?>
-                     </a>
-                 </div>
-                 <div class="service">
-                     <a data-xid="napster-music-link" class="img-btn redirect" href="https://us.napster.com/artist/lauv" data-player="napster" data-servicetype="play" data-apptype="manual">
-											 <?= $profile->xid("napster-music-link") ?>
-                     </a>
-                 </div>
-                 <!--Last option should be 'i dont know'-->
+	                 <div class="service">
+	                     <a data-xid="apple-music-link" class="img-btn redirect" href="https://music.apple.com/us/artist/982612996?uo=4&amp;app=music&amp;at=1010lpyZ&amp;ct=LFV_83d8003f186e77e39c08fbdf7fa86a6b" data-player="applemusic" data-servicetype="play" data-apptype="manual">
+												 <?= $profile->xid("apple-music-link") ?>
+	                     </a>
+	                 </div>
+	                 <div class="service">
+	                     <a data-xid="spotify-music-link" class="img-btn redirect" href="https://open.spotify.com/artist/5JZ7CnR6gTvEMKX4g70Amv" data-uri="spotify:artist:5JZ7CnR6gTvEMKX4g70Amv" data-player="spotify" data-servicetype="play" data-apptype="manual">
+												 <?= $profile->xid("spotify-music-link") ?>
+	                     </a>
+	                 </div>
+	                 <div class="service">
+	                     <a data-xid="itunes-music-link" class="img-btn redirect" href="https://itunes.apple.com/us/artist/1354803196?uo=4&amp;app=itunes&amp;at=1010lpyZ&amp;ct=LFV_83d8003f186e77e39c08fbdf7fa86a6b" data-player="itunes" data-servicetype="download" data-apptype="manual">
+												 <?= $profile->xid("itunes-music-link") ?>
+	                     </a>
+	                 </div>
+	                 <div class="service">
+	                     <a data-xid="amazon-music-link" class="img-btn redirect" href="https://music.amazon.com/artists/B00CN49HZU?ref=dm_sh_865c-2082-dmcp-c1b3-dcda7&amp;musicTerritory=US&amp;marketplaceId=ATVPDKIKX0DER" data-player="amazonmusic" data-servicetype="play" data-apptype="manual">
+												 <?= $profile->xid("amazon-music-link") ?>
+	                     </a>
+	                 </div>
+	                 <div class="service">
+	                     <a data-xid="youtube-music-link" class="img-btn redirect" href="https://music.youtube.com/channel/UCWjoDY2SXJ5dvcdunWI6mjQ" data-player="youtubemusic" data-servicetype="play" data-apptype="manual">
+												 <?= $profile->xid("youtube-music-link") ?>
+	                     </a>
+	                 </div>
+	                 <div class="service">
+	                     <a data-xid="tidal-music-link" class="img-btn redirect" href="https://tidal.com/browse/artist/4898953" data-player="tidal" data-servicetype="play" data-apptype="manual">
+												 <?= $profile->xid("tidal-music-link") ?>
+	                     </a>
+	                 </div>
+	                 <div class="service">
+	                     <a data-xid="pandora-music-link" class="img-btn redirect" href="https://www.pandora.com/artist/lauv/AR2J3gdxqXvfbww?part=lf&amp;corr=83d8003f186e77e39c08fbdf7fa86a6b" data-player="pandora" data-servicetype="play" data-apptype="manual">
+												 <?= $profile->xid("pandora-music-link") ?>
+	                     </a>
+	                 </div>
+	                 <div class="service">
+	                     <a data-xid="deezer-music-link" class="img-btn redirect" href="http://www.deezer.com/artist/4677655?app_id=140685" data-player="deezer" data-servicetype="play" data-apptype="manual">
+												 <?= $profile->xid("deezer-music-link") ?>
+	                     </a>
+	                 </div>
+	                 <div class="service">
+	                     <a data-xid="napster-music-link" class="img-btn redirect" href="https://us.napster.com/artist/lauv" data-player="napster" data-servicetype="play" data-apptype="manual">
+												 <?= $profile->xid("napster-music-link") ?>
+	                     </a>
+	                 </div>
+	                 <!--Last option should be 'i dont know'-->
 
-              </div>
+	              </div>
 
-            </div>
+	            </div>
 
+						</div>
           </div>
         </div>
       </div>
@@ -140,7 +132,8 @@ require dirname(__FILE__).'/_dynamix.php';
           </div>
         </div>
       </div>
-
+		</div>
+		
     </section>
 
     <section class="footer" id="footer">
