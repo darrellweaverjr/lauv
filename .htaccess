@@ -6,4 +6,4 @@ RewriteRule ^(.*)/$ /$1 [L,R]
 RewriteRule ^([a-zA-Z0-9-]+)$ index.php?profile=$1
 RewriteRule ^([a-zA-Z0-9-]+)/$ index.php?profile=$1
 
-ErrorDocument 404 /
+Redirect  404 /
