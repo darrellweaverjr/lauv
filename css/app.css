@@ -34,12 +34,34 @@ h1, h2, h3, h4 {
   margin-top: 20px;
   padding: 0 0 20px 0;
 }
-.fam-form{
-  width:100%;
-  background-color:#fff;
+.rainbow-bg{
+  background: linear-gradient(89.81deg, rgb(101, 48, 207) 0.64%, rgb(16, 50, 242) 23.92%, rgb(131, 228, 96) 43.07%, rgb(239, 231, 85) 61.69%, rgb(223, 124, 54) 80.84%, rgb(210, 66, 55) 99.98%);
+  padding: 10px;
   margin: -160px 0 0 0;
+}
+.fam-form {
+  width: 100%;
+  background-color: #fff;
   padding: 40px;
-  border-top: 3px solid #4577bd;
+}
+.handm-button a{
+    font-family: 'futura-pt', sans-serif;
+    margin-top: 15px;
+    width: 100%;
+    padding: 25px;
+    color: #000;
+    border-radius: 0;
+    border: 0px solid #4577bd;
+    background: linear-gradient(89.81deg, rgb(101, 48, 207) 0.64%, rgb(16, 50, 242) 23.92%, rgb(131, 228, 96) 43.07%, rgb(239, 231, 85) 61.69%, rgb(223, 124, 54) 80.84%, rgb(210, 66, 55) 99.98%);
+    cursor: pointer;
+    font-family: futura-pt;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    display: block;
+    text-decoration: none;
 }
 .logo {
   background-position: left center;
@@ -50,6 +72,17 @@ h1, h2, h3, h4 {
   height: 76px;
   width: 120px;
   color: rgba(0,0,0,0);
+}
+.sponsor-logo{
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  align-self: center;
+  height: 76px;
+  width: 120px;
+  color: rgba(0,0,0,0);
+  float:right;
 }
 .service{
   width:100%;
@@ -112,6 +145,12 @@ h1.header1 {
   height:560px;
   width:100%;
 }
+.body-pattern{
+  background-image: url("https://storage.googleapis.com/awal-bucket/lauv-pattern-white-3.jpg");
+  background-repeat: repeat;
+  padding: 0 0 50px 0;
+  min-height: 250px;
+}
 h3.header2 {
   font-size: 29px;
   font-weight: 500;
@@ -129,11 +168,12 @@ p.details {
 
 /** Footer Styles */
 .footer {
-  background-color: #dcdddf;
+  background-color: #f6f6f6;
   /* text-align: center; */
 }
 .footer-content {
   padding: 50px;
+  background: linear-gradient(89.81deg, rgb(101, 48, 207) 0.64%, rgb(16, 50, 242) 23.92%, rgb(131, 228, 96) 43.07%, rgb(239, 231, 85) 61.69%, rgb(223, 124, 54) 80.84%, rgb(210, 66, 55) 99.98%);
 }
 .footer-content a {
   color: #000;
@@ -192,6 +232,15 @@ p.details {
 .rules{
   text-align: left;
 }
+.header-info {
+  text-align: left;
+  font-size: 16px;
+  padding: 0 0 20px 0;
+}
+.handm-collab{
+  color:#ff0000;
+  font-size: 16px;
+}
 /** Tablet Styles **/
 @media screen and (max-width: 768px) {
   .header {
@@ -215,16 +264,6 @@ p.details {
   .header {
     margin: 0;
     padding: 0.75rem 0;
-  }
-  .footer img{
-    margin:auto;
-    display: block;
-    padding: 15px 0;
-  }
-  .footer-content li {
-    display: block;
-    margin: 0 0 0 10px;
-    text-align: center;
   }
   .extremepadding {padding: 30px 14px;}
   .maincontent h2, .formcontent h2 {font-size: 24px;}
@@ -255,5 +294,37 @@ p.details {
   .footer .copyright, .footer .privacy {font-size: 12px;}
   .footer .footer-content {padding: 50px 0;}
   .footer .social {justify-content: space-around;}
-  .footer .row .small-12.columns {background-color: #dcdddf;}
+  .footer-content ul {
+    padding: 10px 0;
+    margin: 0;
+    text-align: left;
+  }
+  .footer-content li{
+    padding: 10px 0;
+    margin: 0 10px 0 0;
+  }
+  .Footer-nav-item{
+    text-align: center;
+  }
+  .logo {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    align-self: center;
+    height: 50px;
+    width: 100px;
+    color: rgba(0,0,0,0);
+  }
+  .sponsor-logo {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    align-self: center;
+    height: 50px;
+    width: 100px;
+    color: rgba(0,0,0,0);
+    float: right;
+  }
 }
