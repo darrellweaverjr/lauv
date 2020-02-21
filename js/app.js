@@ -11,7 +11,7 @@ $(document).ready(function () {
                 var key = e.charCode || e.keyCode || 0;
                 var ctrlKey = (e.ctrlKey ? true : false);
                 if (ctrlKey && (key === 118 || key === 99 || key === 114)) {
-                    // ctrl-c, ctrl-v, ctrl-r 
+                    // ctrl-c, ctrl-v, ctrl-r
                     return true;
                 }
                 // allow backspace, tab, delete, arrows, numbers and keypad numbers ONLY
@@ -69,8 +69,8 @@ $(document).ready(function () {
             })
             .done(function (response) {
                 if (response.status === "success") {
-                    /* var profileURL = (typeof profileURL !== 'undefined') ? profileURL : 'default'; */
-                    window.location.href = "thank-you.php?profile="+profileURL;
+                  var profileURL = (typeof profileURL !== 'undefined') ? profileURL : 'default';
+                  window.location.href = "thank-you.php?profile="+profileURL;
                 } else {
                     window.alert("AN ERROR OCCURRED");
                 }
