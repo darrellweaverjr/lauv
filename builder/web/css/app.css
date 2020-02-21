@@ -146,7 +146,7 @@ h1.header1 {
   width:100%;
 }
 .body-pattern{
-  background-image: url("https://storage.googleapis.com/awal-bucket/lauv-pattern-white-3.jpg");
+  background-image: url("https://storage.googleapis.com/awal-bucket/lauv-pattern-white-4.jpg");
   background-repeat: repeat;
   padding: 0 0 50px 0;
   min-height: 250px;
@@ -257,6 +257,15 @@ p.details {
     margin: auto;
   }
   .formcontent {margin-top: 1rem;}
+  .footer-content ul {
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+  }
+  .footer-content li {
+    display: block;
+    margin: 5px 0;
+  }
 }
 
 /** Mobile Styles */
@@ -292,17 +301,15 @@ p.details {
   .field-list .field.checkbox .title br {display: block;}
   .form-button-wrapper--align-left {text-align: center;}
   .footer .copyright, .footer .privacy {font-size: 12px;}
-  .footer .footer-content {padding: 50px 0;}
+  .footer .footer-content {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .footer-content img{
+    padding: 20px 0;
+    text-align: center;
+  }
   .footer .social {justify-content: space-around;}
-  .footer-content ul {
-    padding: 10px 0;
-    margin: 0;
-    text-align: left;
-  }
-  .footer-content li{
-    padding: 10px 0;
-    margin: 0 10px 0 0;
-  }
   .Footer-nav-item{
     text-align: center;
   }
@@ -326,5 +333,10 @@ p.details {
     width: 100px;
     color: rgba(0,0,0,0);
     float: right;
+  }
+  .footer-content ul {
+    padding: 0;
+    margin: 0;
+    text-align: text;
   }
 }
