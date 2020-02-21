@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 }
 
-$template_name = 'hm-lander';
+$template_name = 'index';
 require dirname(__FILE__).'/_creds.php';
 require dirname(__FILE__).'/_dynamix.php';
 ?>

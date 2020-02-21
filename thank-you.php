@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 }
 
-$template_name = 'hm-thank-you';
+$template_name = 'thank-you';
 require dirname(__FILE__).'/_creds.php';
 require dirname(__FILE__).'/_dynamix.php';
 ?>
@@ -133,7 +133,7 @@ require dirname(__FILE__).'/_dynamix.php';
         </div>
       </div>
 		</div>
-		
+
     </section>
 
     <section class="footer" id="footer">
