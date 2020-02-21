@@ -70,7 +70,7 @@ require dirname(__FILE__).'/_dynamix.php';
             	<div class="formblock">
                 <div class="nes-form-block" id="nes-form-block">
                   <form autocomplete="on" id="contest_form" action="_submit.php" method="POST">
-										<input type="hidden" name="profile" value="default" />
+										<input type="hidden" name="profile" value="<?=htmlspecialchars($profileName); ?>" />
                     <div class="field-list clear">
 
                       <div class="form-item required-item">
