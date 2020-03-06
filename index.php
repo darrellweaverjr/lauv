@@ -96,9 +96,9 @@ require dirname(__FILE__).'/_dynamix.php';
 
                       <div class="form-item required-item">
                         <label class="field-title">
-                          Phone<span>*</span>
+                          Phone
                         </label>
-                        <input class="field-element" id="phone" name="phone" type="tel" spellcheck="false" required="required">
+                        <input class="field-element" id="phone" name="phone" type="tel" spellcheck="false">
                       </div>
 
                       <div class="form-item required-item">
